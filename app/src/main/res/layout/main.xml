@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="fridaRun"
+            android:text="@string/run"
+            android:focusable="true" />
+
+        <Button
+            android:clickable="true"
+            android:onClick="fridaStop"
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stop"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical"
+        android:layout_weight="1"
+        android:id="@+id/frida_print"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content" />
+
+</LinearLayout>
